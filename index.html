@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand text-light">Trash to Treasure</a>
+      <div class="sign">
+        <a data-toggle="modal" data-target="#login" class="text-light" id='btn'> <span class="fa fa-sign-in"></span>Log
+          In </a>
+        <a data-toggle="modal" data-target="#signup" id='btn1' class="text-light ml-3">
+          <span class="fa fa-sign-in"></span>Sign Up
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div class="modal fade" id='login'>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-light">
+          <div class="modal-title">Log In</div>
+          <button class="close text-light" type="button" data-dismiss="modal">
+            &times;
+          </button>
+        </div>
+        <div class="modal-body mt-3">
+          <form>
+            <div class="ml-2 row">
+              <div class="col-10">
+                <input type="text" class="form-control" placeholder="User_Id">
+              </div>
+            </div>
+            <div class="ml-2 row">
+              <div class="col-10">
+                <input type="text" class="form-control" placeholder="Password">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline-primary">Log In</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id='signup'>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-light">
+          <div class="modal-title">Sign Up</div>
+          <button class="close text-light" type="button" data-dismiss="modal">
+            &times;
+          </button>
+        </div>
+        <div class="modal-body mt-3">
+          <div class="row">
+            <div class="col-8">
+              <button class="btn btn-outline-danger"><i class="fa fa-google-plus-square"></i> SignIn With
+                Google</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <button class="btn btn-outline-primary"><i class="fa fa-twitter-square"></i> SignIn With Twitter</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <button class="btn btn-outline-success"><i class='fa fa-facebook-square'></i> SignIn With
+                Facebook</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="jumbotron">
+    <h3 class="j-header mr-3">An Innovative Way to collect Trash</h3>
+    <div class="trash text-success">
+      <i class="fa fa-trash fa-4x ml-4"></i>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <img class="d-block w-100 img-thumbnail" src="./images/pic1.jpg" />
+      </div>
+    </div>
+    <h3 class="text-center mb-4">Inspired By Leaders</h3>
+    <div class="row">
+      <div class="col-12 mb-3">
+        <div class="card h-200">
+          <div class="card-body p-4">
+            <p>Sanitation is more important than political independence.</p>
+          </div>
+          <div class="card-footer">
+            <h4 class="text-muted">~Mahatama Gandhi</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="card h-200">
+          <div class="card-body">
+            <p>Cleaning up the country cannot be the sole responsibility of sweepers. Do citizens have no role in this?
+              We have to
+              change this mindset.</p>
+          </div>
+          <div class="card-footer">
+            <h4 class="text-muted">~Narendra Modi</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h3 class="text-center">Participate and get Rewarded <span class="badge badge-success"> $</span></h3>
+        <h5 class="mt-4 ml-4">Follow the Steps Below :</h5>
+        <ul>
+          <p>Step 1</p>
+          <li class="alert alert-primary">Fill the Form Below <span class="fa fa-check-circle fa-lg"></span></li>
+          <p>Step 2</p>
+          <li class="alert alert-warning">Turn on your Location / GPS <span class="fa fa-compass fa-lg"></span></li>
+          <p>Step 3</p>
+          <li class="alert alert-success">Help us Contact you and track you <span class="fa fa-phone fa-lg"></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row ml-3">
+      <h3 class="ml-3 mb-3">Form Details</h3>
+      <div class="col-12">
+        <form id="info-form">
+          <div class="row">
+            <div class="col-12 mb-2 col-sm-5">
+              <input id="f-name" class="form-control" type="text" placeholder="First Name">
+            </div>
+            <div class="col-12 mb-2 col-sm-5">
+              <input id="l-name" class="form-control" type="text" placeholder="Last Name"></div>
+          </div>
+
+          <div class="row">
+            <div class=" col-12 col-sm-5 mb-2">
+              <input id="cnumber" type="tel" class="form-control" placeholder="Contact Number">
+            </div>
+            <div class="col-12 col-sm-5 ">
+              <input id='email' type="email" class="form-control" placeholder="Email">
+            </div>
+          </div>
+          <div class="row">
+            <div class=" col-12 col-sm-5 mb-2">
+              <input id='state' type="text" class="form-control" placeholder="State">
+            </div>
+            <div class="col-12 col-sm-5 ">
+              <input id='city' type="text" class="form-control" placeholder="City">
+            </div>
+          </div>
+          <div class="row">
+            <div class=" col-12 col-sm-7 mb-2">
+              <input id='address' type="text" class="form-control" placeholder="Full Address">
+            </div>
+            <div class="col-12 col-sm-3 ">
+              <input id="pin" type="text" class="form-control" placeholder="PIN CODE">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-5  col-12">
+              <button id="locate" type="submit" class="btn btn-lg btn-primary">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="footer bg-primary container-fluid">
+    <div class="row text-center pt-2">
+      <div class="col-12">
+        <h3 class="text-light ">&copy; COPYRIGHT 2020 T-2-T</h3>
+      </div>
+    </div>
+    <div class="row text-center text-light">
+      <div class="col-12">
+        <a class="fa fa-lg fa-twitter-square fa-4x mr-3"></a>
+        <a class="fa fa-lg fa-facebook-square fa-4x mr-3"></a>
+        <a class="fa fa-lg fa-google-plus-square fa-4x mr-3"></a>
+      </div>
+    </div>
+    <div class="row  text-light justify-content-center">
+      Creaters Vijay & Satayajit
+    </div>
+  </div>
+</body>
+<!-- jQuery library -->
+<script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+<script src="./script.js"></script>
+
+</html>
